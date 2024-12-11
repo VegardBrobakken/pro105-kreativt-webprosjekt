@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*Knapp for å komme seg tilbake til forsiden*/
+.home-button {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  color: black;
+  text-decoration: none;
+  background-color: #8cff1a;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.home-button:hover {
+  background-color: #336600;
+}
+
+/* Background image */
+.backgroundImage {
+  width: 100%;
+  margin: 0%;
+}
+
+/*størrelsen og postisjonen*/
+.crocodile {
+  position: absolute;
+  width: 13%;
+  top: 65%;
+  left: 50%;
+}
+
+/*størrelsen og postisjonen*/
+.flyingbird {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  left: 30%;
+  top: 30%;
+  animation: fly 5s infinite;
+}
+
+@keyframes fly {
+  0% {
+    left: 30%;
+    top: 30%;
+  }
+  40% {
+    left: 60%;
+    top: 30%;
+    transform: rotateY(0deg);
+  }
+  50% {
+    left: 60%;
+    top: 30%;
+    transform: rotateY(180deg);
+  }
+  92% {
+    top: 30%;
+    left: 30%;
+    transform: rotateY(180deg);
+  }
+}
+
+/*størrelsen og postisjonen*/
+.snake {
+  position: absolute;
+  width: 10%;
+  top: 80%;
+  left: 25%;
+  -webkit-animation: slide 3s ease-in-out infinite;
+  animation: slide 3s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 75%;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: 75%;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 75%;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: 75%;
+  }
+}
+/*størrelsen og postisjonen*/
+.bird {
+  position: absolute;
+  width: 5%;
+  top: 50%;
+  left: 20%;
+}
+/*størrelsen, postisjonen og animation på fuglen sin bevegelse*/
+.magpie {
+  position: absolute;
+  width: 20%;
+  left: 30%;
+  top: 30%;
+  animation: fly 6s infinite;
+  animation-timing-function: ease-in-out;
+}

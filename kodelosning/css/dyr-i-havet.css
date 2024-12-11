@@ -1,0 +1,126 @@
+#Dyr-i-havet {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Her satte jeg inn bakgrunnsbilde ved hjelp av url */
+
+section {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../img/Hav.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*Knapp for å komme seg tilbake til forsiden*/
+.home-button {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  color: black;
+  text-decoration: none;
+  background-color: #0080ff;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.home-button:hover {
+  background-color: #004080;
+}
+
+/*Her posisjonerte jeg og gjorde sånn at den fikk en animasjon */
+
+#delfin {
+  bottom: 55%;
+  left: 15px;
+  position: absolute;
+  animation: vertical-shaking 0.45s infinite;
+}
+#sel {
+  bottom: 70%;
+  right: 30px;
+  position: absolute;
+  animation: tilt-shaking 0.5s infinite;
+}
+#skilpadde {
+  bottom: 5%;
+  position: absolute;
+  left: 50%;
+  animation: horizontal-shaking 0.35s infinite;
+}
+#fisk {
+  bottom: 25%;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: fisk;
+  animation-duration: 10s;
+}
+@keyframes fisk {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

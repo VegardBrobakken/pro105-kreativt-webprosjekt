@@ -1,0 +1,201 @@
+/* Her satt jeg inn bakgrunnsbildet ved hjelp av url.*/
+
+#unike-body {
+  background-image: url("../img/background-4.png");
+  background-size: cover;
+}
+
+/*Knapp for å komme seg tilbake til forsiden*/
+.home-button {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  color: black;
+  text-decoration: none;
+  background-color: #ffa31a;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.home-button:hover {
+  background-color: #995c00;
+}
+
+/* Her la jeg til containeren og fikk den til å ligge rundt kengerubildet. Ved hjelp av animation, hover og @keyframes
+fikk jeg kengeruen til å hoppe*/
+.kengeru-container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 2%;
+  bottom: 3%;
+}
+
+.kengeru-container .kengeru {
+  animation-play-state: paused;
+}
+
+.kengeru-container:hover .kengeru {
+  animation-play-state: running;
+}
+
+.kengeru {
+  position: absolute;
+  width: 300px;
+  bottom: 4%;
+  left: 3%;
+  animation-name: kengeru-jumping;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes kengeru-jumping {
+  0% {
+    bottom: 4%;
+  }
+  50% {
+    bottom: 15%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+
+/*Jeg la teksten rundt en border og flytta den til kengeruen.*/
+
+.snakkeboble-kengeru {
+  position: absolute;
+  width: 150px;
+  left: 20%;
+  bottom: 50%;
+  font-size: medium;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  border-radius: 3%;
+  padding-left: 3px;
+  background-color: antiquewhite;
+}
+
+/*Her gjorde jeg det samme som på kengeruen*/
+
+.wallaby-container {
+  width: 200px;
+  height: 270px;
+  position: absolute;
+  left: 25%;
+  bottom: 3%;
+}
+
+.wallaby-container .wallaby {
+  animation-play-state: paused;
+}
+
+.wallaby-container:hover .wallaby {
+  animation-play-state: running;
+}
+
+.wallaby {
+  position: absolute;
+  width: 200px;
+  bottom: 4%;
+  left: 10%;
+  animation-name: wallaby-jumping;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes wallaby-jumping {
+  0% {
+    bottom: 4%;
+  }
+  50% {
+    bottom: 15%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+
+/*Jeg la også til en container rundt platymusen og brukte animation og @keyframes til å få til å gå frem
+og tilbake. Under la jeg til en snakkeboble som jeg satt over platymusen*/
+
+.platymus-container {
+  width: 620px;
+  height: 100px;
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
+
+.platymus-container .platymus {
+  animation-play-state: paused;
+}
+
+.platymus-container:hover .platymus {
+  animation-play-state: running;
+}
+
+.platymus {
+  position: absolute;
+  width: 170px;
+  bottom: 20%;
+  right: 6%;
+  animation-name: platymus-run;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes platymus-run {
+  0% {
+    right: 10%;
+  }
+  50% {
+    right: 70%;
+  }
+  100% {
+    right: 10%;
+  }
+}
+
+.snakkeboble-platymus {
+  position: absolute;
+  width: 150px;
+  right: 20%;
+  bottom: 30%;
+  font-size: medium;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  border-radius: 3%;
+  padding-left: 3px;
+  background-color: antiquewhite;
+}
+
+/*Her la jeg til bildet av en fairy-wren og fikk den til å fly ved hjelp av animation og @keyframes*/
+
+.fairy-wren {
+  position: absolute;
+  width: 140px;
+  top: 3%;
+  right: 3%;
+  animation-name: fairy-wren-fly;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fairy-wren-fly {
+  0% {
+    right: 1%;
+  }
+  100% {
+    right: 100%;
+  }
+}

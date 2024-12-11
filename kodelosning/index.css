@@ -1,0 +1,379 @@
+/*CSS for index/forside------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+/*Seksjonen for index siden*/
+#index-section {
+  background-color: #347fb8;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/*Bølger*/
+.index-waves {
+  position: absolute;
+  top: 20%;
+  left: -170px;
+  width: 170px;
+  animation: waves1 8s 5s infinite linear;
+}
+
+.index-waves2 {
+  position: absolute;
+  top: 35%;
+  left: -170px;
+  width: 170px;
+  animation: waves2 11s infinite linear;
+}
+
+.index-waves3 {
+  position: absolute;
+  top: 60%;
+  left: -170px;
+  width: 170px;
+  animation: waves3 9s 7s infinite linear;
+}
+
+.index-waves4 {
+  position: absolute;
+  top: 90%;
+  left: -170px;
+  width: 170px;
+  animation: waves4 10s 3s infinite linear;
+}
+
+@keyframes waves1 {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes waves2 {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes waves3 {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes waves4 {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*Overskrift*/
+@font-face {
+  font-family: headerFont;
+  src: url(fonts/kangaroo-punch-font/KangarooPunchBold-Z9KK.ttf);
+}
+
+.header-txt {
+  text-align: center;
+  font-size: 65px;
+  font-family: headerFont;
+  color: white;
+  text-shadow: 4px 4px black;
+}
+
+/*Australia på kartet*/
+.australia-map {
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+/*Det australske flagget*/
+.australia-flag-box {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-size: 20px;
+  width: 350px;
+  height: 500px;
+  visibility: hidden;
+  border: 2px solid black;
+}
+
+.australia-flag-box:hover .australia-flag-txt {
+  visibility: visible;
+  opacity: 1;
+}
+
+.australia-flag-txt {
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 5%;
+  top: 22%;
+  left: -5%;
+}
+
+.australia-flag {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 5px black;
+  visibility: visible;
+}
+
+.australia-flag:hover {
+  transform: scale(1.1);
+}
+
+/*Boksen for å navigere til farlige dyr i havet siden*/
+.ocean-dangerous-animals-box {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 28%;
+  top: 22%;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+  background-color: #ff3333;
+}
+
+.ocean-dangerous-animals-box-img {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  width: 100%;
+}
+
+.ocean-dangerous-animals-box-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.ocean-dangerous-animals-box-txt:hover {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.ocean-dangerous-animals-box-txt-a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+/*Boksen for å navigere til dyr i havet siden*/
+.ocean-animals-box {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 42%;
+  top: 75%;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+  background-color: #b3b300;
+}
+
+.ocean-animals-box-img {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 100%;
+}
+
+.ocean-animals-box-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.ocean-animals-box-txt:hover {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.ocean-animals-box-txt-a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Boksen for å navigere til unike dyr siden*/
+.unique-animals-box {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 34%;
+  top: 48%;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+  background-color: #00802b;
+}
+
+.unique-animals-box-img {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 80%;
+}
+
+.unique-animals-box-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.unique-animals-box-txt:hover {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.unique-animals-box-txt-a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Boksen for å navigere til farlige dyr siden*/
+.dangerous-animals-box {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 48%;
+  top: 40%;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+  background-color: #0099ff;
+}
+
+.dangerous-animals-box-img {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+
+.dangerous-animals-box-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+}
+
+.dangerous-animals-box-txt:hover {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.dangerous-animals-box-txt-a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Boksen for å navigere inn på regnskog siden*/
+.rainforest-box {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 60%;
+  top: 56%;
+  box-shadow: 5px 5px black;
+  border-radius: 10px;
+  background-color: salmon;
+}
+
+.rainforest-box-img {
+  position: absolute;
+  width: 88%;
+  left: 5%;
+}
+
+.rainforest-box-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.rainforest-box-txt:hover {
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.rainforest-box-txt-a {
+  text-decoration: none;
+  color: white;
+}
